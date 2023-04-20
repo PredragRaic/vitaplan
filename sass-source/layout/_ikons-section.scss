@@ -1,0 +1,30 @@
+.section__icons{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 500px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .ic{
+            color: $base-purple;
+            width: 60px;
+            height: 60px;
+            margin-top: 20px;
+        }
+        h5{
+            font-size: 16px;
+            color: $font-black;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+    }
+    
+}

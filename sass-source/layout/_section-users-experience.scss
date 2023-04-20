@@ -1,0 +1,135 @@
+.section__users__experience{
+    background: $background-purple-light;
+    .users__experience{
+        @media screen and (min-width: 600px) {
+            display: flex;
+        }
+        h2{
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 600;
+            color: $font-black;
+            margin: 30px 0;
+            
+        }
+        &__slider__wrap{
+            @media screen and (min-width: 600px) {
+                width: 50%;
+            }
+        }
+        .why__choose__vitaplan{
+            @media screen and (min-width: 600px) {
+                width: 50%;
+                padding-left: 10px;
+            }
+            h2{
+                margin-top: 60px;
+            }
+            @media screen and (min-width: 600px) {
+                h2{
+                    margin-top: 30px;
+                }
+                
+            }
+            ol{
+                li{
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    &:nth-child(1):before{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        content: "1";
+                        font-family: 'Sono', sans-serif;
+                        background-color: $base-light-purple;
+                        color: $white;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                        flex-shrink: 0;
+                        margin-right: 10px;
+                    }
+                    &:nth-child(2):before{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        content: "2";
+                        font-family: 'Sono', sans-serif;
+                        background-color: $base-light-purple;
+                        color: $white;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                        flex-shrink: 0;
+                        margin-right: 10px;
+                    }
+                    &:nth-child(3):before{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        content: "3";
+                        font-family: 'Sono', sans-serif;
+                        background-color: $base-light-purple;
+                        color: $white;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                        flex-shrink: 0;
+                        margin-right: 10px;
+                    }
+                    &:nth-child(4):before{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        content: "4";
+                        font-family: 'Sono', sans-serif;
+                        background-color: $base-light-purple;
+                        color: $white;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                        flex-shrink: 0;
+                        margin-right: 10px;
+                    }
+                    &:nth-child(5):before{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        content: "5";
+                        font-family: 'Sono', sans-serif;
+                        background-color: $base-light-purple;
+                        color: $white;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                        flex-shrink: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}

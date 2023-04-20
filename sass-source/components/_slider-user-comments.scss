@@ -1,0 +1,113 @@
+.users__experience__slider{
+    &__wrap{
+        @media screen and (min-width: 600px) {
+            padding-right: 10px;
+        }
+    }
+    .slide__user{
+        p{
+            color: $font-black;
+            font-size: 14px;
+            line-height: 20px;
+            font-style: italic;
+            font-weight: 100;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            display: flex;
+            &::before{
+                content: ",,";
+                align-self: flex-start;
+                font-family: 'DM Serif Display', serif;
+                font-style: normal;
+                font-size: 40px;
+                color: gray;
+                transform: rotate(180deg);
+            }
+            &::after{
+                content: ",,";
+                align-self: flex-end;
+                font-family: 'DM Serif Display', serif;
+                color: gray;
+                font-style: normal;
+                font-size: 40px;
+            }
+        }
+        &__com{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 10px;
+            .bi-person-fill{
+                fill: #373737;
+                margin-right: 5px;
+            }
+            h6{
+                color: $font-black;
+                
+            }
+        }
+    }
+
+
+
+    .slick-dots {
+        position: absolute;
+        list-style: none;
+        display: block;
+        bottom: -10px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        li {
+            position: relative;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+            button {
+                border: 0;
+                background: transparent;
+                display: block;
+                height: 20px;
+                width: 20px;
+                outline: none;
+                line-height: 0px;
+                font-size: 0px;
+                color: transparent;
+                padding: 5px;
+                cursor: pointer;
+                &:hover, &:focus {
+                    outline: none;
+                    &:before {
+                        opacity: .5;
+                    }
+                }
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: ".";
+                    width: 20px;
+                    height: 20px;
+                    // font-family: $slick-font-family;
+                    // font-size: $slick-dot-size;
+                    line-height: 20px;
+                    text-align: center;
+                    color: gray;
+                    opacity: .5;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+            }
+            &.slick-active button:before {
+                color: black;
+                opacity: .8;
+            }
+        }
+    }    
+
+}

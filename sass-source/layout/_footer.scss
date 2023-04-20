@@ -1,0 +1,145 @@
+.footer__section{
+    background-color: $footer-background;
+    color: $white;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    h3{
+        font-size: 17px;
+        font-weight:600;
+        line-height: 20px;
+        margin: 20px 0 10px 0;
+    }
+    p{
+        font-weight: 100;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    h5{
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 3px 0;
+        span{
+            font-weight: 600;
+        }
+    }
+    .bi{
+        width: 25px;
+        height: 25px;
+        margin-left: 25px;
+        
+    }
+    h6{
+        font-size: 11px;
+        line-height: 20px;
+        font-weight: 100;
+        text-align: center;
+    }
+    .footer__wrapper__content{
+        @media screen and (min-width: 500px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (min-width: 1000px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+.footer__logo__about{
+    img{
+        max-width: 150px;
+        margin: 10px 0;
+    }
+    @media screen and (min-width: 500px) {
+        padding-right: 20px;
+    }
+}
+.footer__contact{
+    @media screen and (min-width: 500px) {
+        padding-right: 20px;
+    }
+}
+
+.bi-telephone-fill{
+    margin-top: 10px;
+}
+.footer__follow__us__social__networks{
+    display: flex;
+    flex-direction: column;
+    a{
+        width: 32px;
+    }
+    .bi-facebook{
+        margin-bottom: 5px;
+        width: 30px;
+        height: 30px;
+        transition: all .2s;
+        @media screen and (min-width: 1000px) {
+            width: 60px;
+            height: 60px; 
+            margin: 15px 30px;
+        }
+        &:hover{
+            background-color: white;
+            fill: #3085F3;
+            border-radius: 50%;
+            transform: scale(1.5);
+        }
+    }
+    .bi-youtube{
+        width: 30px;
+        height: 30px;
+        transition: all .2s;
+        @media screen and (min-width: 1000px) {
+            width: 60px;
+            height: 60px; 
+            margin: 15px 30px;
+        }
+        &:hover{
+            background-color: white;
+            fill: #FF0000;
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+    }
+}
+#Layer_1{
+    width: 30px;
+    height: 30px;
+    transition: all .2s;
+    &:hover{
+        fill: black;
+        background-color: $white;
+        padding: 2px 5px;
+        border-radius: 5px;
+    }
+    @media screen and (min-width: 1000px) {
+        width: 60px;
+        height: 60px; 
+        margin: 15px 30px;
+    }
+
+}
+.footer__wrapper__copyright{
+    padding-top: 20px;
+    border-top: 1px solid white;
+    margin-top: 20px;
+    @media screen and (min-width: 600px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    a{
+        transition: all .15s ease;
+        &:hover{
+            font-weight: 600;
+            color: $base-light-purple;
+        }
+    }
+}
